@@ -1,1 +1,1404 @@
-html <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>The Website Nook | Website Pricing + Intake</title> <meta name="description" content="Custom website builds for small businesses, side hustles, service providers, shops, breeders, creators, and growing brands." /> <style> :root { --ink: #221813; --text: #3f342c; --muted: #716459; --cream: #fbf7ef; --paper: #ffffff; --sand: #efe3d2; --tan: #c7a980; --brown: #7d5837; --espresso: #2b2119; --sage: #65785f; --rose: #b9827b; --shadow: 0 24px 65px rgba(43, 33, 25, .14); --soft: 0 12px 34px rgba(43, 33, 25, .08); --radius: 28px; } * { box-sizing: border-box; } html { scroll-behavior: smooth; } body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--text); background: radial-gradient(circle at 12% 6%, rgba(199, 169, 128, .22), transparent 26%), radial-gradient(circle at 88% 10%, rgba(185, 130, 123, .13), transparent 30%), linear-gradient(180deg, var(--cream), #fff 42%, #f8f0e5 100%); line-height: 1.55; } a { color: inherit; } .announce { background: var(--espresso); color: white; text-align: center; padding: 10px 16px; font-size: 13px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; } header { position: sticky; top: 0; z-index: 20; background: rgba(251, 247, 239, .92); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(125, 88, 55, .13); } .nav { max-width: 1180px; margin: 0 auto; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px; } .brand strong { display: block; font-family: Georgia, "Times New Roman", serif; color: var(--ink); font-size: 29px; letter-spacing: -.03em; line-height: 1; } .brand span { display: block; margin-top: 4px; color: var(--brown); font-size: 12px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; } .navlinks { display: flex; align-items: center; gap: 17px; font-size: 14px; font-weight: 850; } .navlinks a { text-decoration: none; color: #3c3027; opacity: .9; } .navlinks a:hover { opacity: 1; color: var(--brown); } .btn { border: 0; border-radius: 999px; padding: 13px 20px; display: inline-flex; align-items: center; justify-content: center; background: var(--espresso); color: #fff !important; text-decoration: none; font-weight: 900; cursor: pointer; box-shadow: 0 12px 28px rgba(43, 33, 25, .23); transition: .18s ease; white-space: nowrap; font-family: inherit; } .btn:hover { transform: translateY(-2px); box-shadow: 0 18px 38px rgba(43, 33, 25, .26); } .btn.light { background: #fff; color: var(--espresso) !important; border: 1px solid rgba(125, 88, 55, .20); box-shadow: none; } .btn.brown { background: var(--brown); } .hero { max-width: 1180px; margin: 0 auto; padding: 74px 20px 48px; display: grid; grid-template-columns: 1.02fr .98fr; gap: 44px; align-items: center; } .eyebrow { display: inline-flex; align-items: center; background: rgba(199, 169, 128, .20); border: 1px solid rgba(125, 88, 55, .12); color: #6c4f31; padding: 8px 13px; border-radius: 999px; font-size: 12px; font-weight: 950; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 18px; } h1, h2 { font-family: Georgia, "Times New Roman", serif; color: var(--ink); letter-spacing: -.045em; margin: 0; } h1 { font-size: clamp(44px, 6vw, 78px); line-height: .96; max-width: 680px; } .hero p { margin: 22px 0 0; color: var(--muted); font-size: 19px; max-width: 640px; } .actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 28px; } .hero-note { margin-top: 16px; color: #76695f; font-size: 14px; } .mock-stack { display: grid; gap: 16px; position: relative; } .browser { background: white; border: 1px solid rgba(125, 88, 55, .16); border-radius: 26px; overflow: hidden; box-shadow: var(--shadow); } .browser.top { transform: rotate(1deg); } .browser.bottom { transform: rotate(-1.2deg); margin-left: 44px; } .dots { display: flex; gap: 7px; padding: 13px 15px; background: #fff9f0; border-bottom: 1px solid rgba(125, 88, 55, .12); } .dots span { width: 10px; height: 10px; border-radius: 999px; display: block; background: #d8c8b4; } .site-link { display: block; position: relative; text-decoration: none; color: inherit; cursor: pointer; overflow: hidden; } .site-link::after { content: "Click to view live site"; position: absolute; right: 14px; bottom: 14px; background: rgba(43, 33, 25, .88); color: #fff; padding: 8px 12px; border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: .02em; opacity: 0; transform: translateY(6px); transition: .18s ease; pointer-events: none; z-index: 4; } .site-link:hover::after { opacity: 1; transform: translateY(0); } .site-link img { transition: .22s ease; } .site-link:hover img { transform: scale(1.025); } .browser img { width: 100%; display: block; aspect-ratio: 16 / 8.4; object-fit: cover; object-position: top center; background: #f0e6d8; } .proof-pill { width: max-content; max-width: 100%; margin: -10px auto 0; background: white; border: 1px solid rgba(125, 88, 55, .18); box-shadow: var(--soft); border-radius: 999px; padding: 13px 18px; font-weight: 900; color: var(--ink); position: relative; z-index: 2; } section { max-width: 1180px; margin: 0 auto; padding: 58px 20px; } .section-head { display: flex; justify-content: space-between; align-items: end; gap: 26px; margin-bottom: 26px; } .section-head h2 { font-size: clamp(34px, 4vw, 50px); line-height: 1; } .section-head p { margin: 0; color: var(--muted); max-width: 560px; } .grid { display: grid; gap: 18px; } .grid.three { grid-template-columns: repeat(3, 1fr); } .grid.two { grid-template-columns: repeat(2, 1fr); } .card { background: rgba(255, 255, 255, .9); border: 1px solid rgba(125, 88, 55, .15); border-radius: var(--radius); box-shadow: var(--soft); overflow: hidden; } .pad { padding: 26px; } .portfolio-img { height: 210px; overflow: hidden; background: #efe7dc; } .portfolio-img img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: top center; } .portfolio-body { padding: 22px; } .tag { display: inline-flex; background: rgba(101, 120, 95, .13); color: #506448; border-radius: 999px; padding: 6px 10px; font-size: 11px; font-weight: 950; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 10px; } h3 { color: var(--ink); margin: 0 0 8px; font-size: 22px; letter-spacing: -.025em; } .muted { color: var(--muted); } .price-card { padding: 27px; position: relative; min-height: 100%; } .price-card.featured { background: linear-gradient(180deg, #fff, #fff7ea); border: 2px solid rgba(125, 88, 55, .28); transform: translateY(-8px); } .badge { position: absolute; top: 18px; right: 18px; border-radius: 999px; background: var(--espresso); color: white; padding: 6px 10px; font-size: 11px; font-weight: 950; letter-spacing: .05em; text-transform: uppercase; } .price { font-family: Georgia, "Times New Roman", serif; color: var(--ink); font-size: 44px; line-height: 1; margin: 16px 0 4px; } .price small { color: var(--muted); font-size: 16px; } ul.clean { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 10px; } ul.clean li { position: relative; padding-left: 27px; color: #3d342d; } ul.clean li::before { content: "✓"; position: absolute; left: 0; color: var(--sage); font-weight: 950; } .care-card { padding: 27px; min-height: 100%; } .care-card.featured { border: 2px solid rgba(125, 88, 55, .28); background: linear-gradient(180deg, #fff, #fff8ec); } .calculator-wrap { display: grid; grid-template-columns: 1.04fr .96fr; gap: 22px; align-items: start; } .calc-panel, .form-panel { background: white; border: 1px solid rgba(125, 88, 55, .16); border-radius: 32px; padding: 28px; box-shadow: var(--shadow); } label { display: block; font-weight: 950; color: #2d241d; font-size: 13px; margin: 0 0 8px; } input, select, textarea { width: 100%; border: 1px solid rgba(95, 107, 122, .25); border-radius: 16px; padding: 13px 14px; background: white; color: #2d241d; font: inherit; outline: none; } input:focus, select:focus, textarea:focus { border-color: var(--brown); box-shadow: 0 0 0 4px rgba(199, 169, 128, .23); } textarea { min-height: 104px; resize: vertical; } .field { margin-bottom: 16px; } .field-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; } .checks { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; } .check { display: flex; gap: 10px; align-items: flex-start; padding: 12px; border: 1px solid rgba(125, 88, 55, .14); border-radius: 16px; background: #fbf7ef; font-weight: 800; font-size: 14px; color: #3a2d24; } .check input { width: auto; margin-top: 3px; } .quote-box { position: sticky; top: 104px; background: var(--espresso); color: white; border-radius: 32px; padding: 28px; box-shadow: var(--shadow); } .quote-box .small { color: #d9cbb9; font-size: 12px; font-weight: 950; text-transform: uppercase; letter-spacing: .13em; } .quote-main { font-family: Georgia, "Times New Roman", serif; font-size: 62px; line-height: 1; margin: 8px 0 10px; } .quote-box p { color: #eee5d9; margin: 0; } .quote-lines { margin: 20px 0; display: grid; gap: 9px; } .quote-line { display: flex; justify-content: space-between; gap: 14px; padding: 9px 0; border-bottom: 1px solid rgba(255, 255, 255, .12); color: #f8f1e8; } .quote-line span:first-child { color: #d9cbb9; } .deposit { background: rgba(255, 255, 255, .10); border: 1px solid rgba(255, 255, 255, .14); border-radius: 20px; padding: 16px; display: grid; gap: 8px; margin-top: 14px; } .deposit div { display: flex; justify-content: space-between; gap: 14px; } .fineprint { font-size: 12px; color: var(--muted); margin-top: 11px; } .quote-box .fineprint { color: #d9cbb9; } .form-wrap { display: grid; grid-template-columns: .82fr 1.18fr; gap: 22px; align-items: start; } .trust-band { margin-top: 18px; background: var(--espresso); color: white; } .trust-inner { max-width: 1180px; margin: 0 auto; padding: 34px 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; } .trust-inner strong { display: block; margin-bottom: 5px; font-size: 17px; } .trust-inner span { color: #d9cbb9; font-size: 14px; } .success { display: none; margin-top: 14px; border-radius: 18px; padding: 14px; background: rgba(101, 120, 95, .13); color: #43563b; border: 1px solid rgba(101, 120, 95, .25); font-weight: 900; } footer { text-align: center; padding: 40px 20px; color: var(--muted); } @media (max-width: 930px) { .hero, .calculator-wrap, .form-wrap { grid-template-columns: 1fr; } .grid.three, .grid.two, .trust-inner { grid-template-columns: 1fr; } .section-head { display: block; } .section-head p { margin-top: 12px; } .price-card.featured { transform: none; } .browser.bottom { margin-left: 0; } .navlinks a:not(.btn) { display: none; } .field-grid, .checks { grid-template-columns: 1fr; } .quote-box { position: static; } .quote-main { font-size: 52px; } } </style> </head> <body> <div class="announce">Custom websites • pricing calculator • portfolio • quote intake</div> <header> <div class="nav"> <div class="brand"> <strong>The Website Nook</strong> <span>Custom website builds</span> </div> <nav class="navlinks"> <a href="#portfolio">Portfolio</a> <a href="#packages">Pricing</a> <a href="#care">Care Plans</a> <a href="#calculator">Calculator</a> <a href="#intake" class="btn">Start Intake</a> </nav> </div> </header> <main> <section class="hero"> <div> <div class="eyebrow">Set your website estimate in minutes</div> <h1>Websites that make your business look real, ready, and trustworthy.</h1> <p> Custom website builds for small businesses, side hustles, shops, breeders, service providers, creators, and local brands. </p> <div class="actions"> <a class="btn brown" href="#calculator">Get Estimate</a> <a class="btn light" href="#portfolio">View Portfolio</a> </div> <div class="hero-note"> You own your domain, website account, and business assets. No hidden monthly fees unless you choose a care plan. </div> </div> <div class="mock-stack"> <div class="browser top"> <div class="dots"><span></span><span></span><span></span></div> <a class="site-link" href="https://thedoodlenook.com/" target="_blank" rel="noopener"> <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fthedoodlenook.com%2F?w=1200" alt="The Doodle Nook website screenshot" /> </a> </div> <div class="browser bottom"> <div class="dots"><span></span><span></span><span></span></div> <a class="site-link" href="https://willowferncofreezedried.com/" target="_blank" rel="noopener"> <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwillowferncofreezedried.com%2F?w=1200" alt="Willow and Fern Co website screenshot" /> </a> </div> <div class="proof-pill">Click the website previews to view the live sites</div> </div> </section> <section id="portfolio"> <div class="section-head"> <h2>Portfolio Snapshot</h2> <p>Real examples from a breeder website, a product/shop website, and a local SEO content layout.</p> </div> <div class="grid three"> <article class="card"> <div class="portfolio-img"> <a class="site-link" href="https://thedoodlenook.com/" target="_blank" rel="noopener"> <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fthedoodlenook.com%2F?w=900" alt="The Doodle Nook homepage" /> </a> </div> <div class="portfolio-body"> <span class="tag">Breeder Website</span> <h3>The Doodle Nook</h3> <p class="muted"> A warm, trust-building website designed to showcase puppies, answer buyer questions, and guide visitors toward an application. </p> </div> </article> <article class="card"> <div class="portfolio-img"> <a class="site-link" href="https://willowferncofreezedried.com/" target="_blank" rel="noopener"> <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwillowferncofreezedried.com%2F?w=900" alt="Willow and Fern Co homepage" /> </a> </div> <div class="portfolio-body"> <span class="tag">Product Website</span> <h3>Willow & Fern Co</h3> <p class="muted"> A bold shop-style site with product navigation, bright visuals, and clear shopping calls-to-action. </p> </div> </article> <article class="card"> <div class="portfolio-img"> <a class="site-link" href="https://willowferncofreezedried.com/blogs/news" target="_blank" rel="noopener"> <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwillowferncofreezedried.com%2Fblogs%2Fnews?w=900" alt="Willow and Fern Co blog layout" /> </a> </div> <div class="portfolio-body"> <span class="tag">SEO Content</span> <h3>Local Blog Layout</h3> <p class="muted"> A content section built around local search terms so the business has more ways to be discovered online. </p> </div> </article> </div> </section> <section id="packages"> <div class="section-head"> <h2>Website Packages</h2> <p>Clear starting prices. The calculator below lets leads estimate their project before they submit the intake form.</p> </div> <div class="grid three"> <article class="card price-card"> <h3>Starter Site</h3> <p class="muted">Best for a new business that needs a simple online home.</p> <div class="price">$499 <small>starting at</small></div> <ul class="clean"> <li>1 to 3 pages</li> <li>Mobile-friendly layout</li> <li>Home, about, contact sections</li> <li>Contact form</li> <li>Social media links</li> <li>Basic SEO setup</li> </ul> </article> <article class="card price-card featured"> <span class="badge">Most Popular</span> <h3>Business Website</h3> <p class="muted">Best for businesses that need services, gallery, and stronger credibility.</p> <div class="price">$899 <small>starting at</small></div> <ul class="clean"> <li>4 to 6 pages</li> <li>Home, about, services, gallery, contact</li> <li>Inquiry form</li> <li>Brand colors and layout styling</li> <li>Google Business link setup</li> <li>Basic SEO setup</li> </ul> </article> <article class="card price-card"> <h3>Shop or Booking Site</h3> <p class="muted">Best for product sellers, booking-based businesses, and detailed inquiries.</p> <div class="price">$1,299 <small>starting at</small></div> <ul class="clean"> <li>5 to 8 pages</li> <li>Shop or booking integration</li> <li>Product/service setup</li> <li>Policy page</li> <li>Gallery or portfolio</li> <li>Launch support</li> </ul> </article> </div> </section> <section id="care"> <div class="section-head"> <h2>Monthly Care Plans</h2> <p>Optional monthly support for businesses that want help keeping their website fresh after launch.</p> </div> <div class="grid two"> <article class="card care-card"> <span class="tag">Optional Add-On</span> <h3>Website Care Plan</h3> <div class="price">$99 <small>/ month</small></div> <p class="muted">Best for basic upkeep and small monthly changes.</p> <ul class="clean"> <li>Small text updates</li> <li>Photo swaps or gallery updates</li> <li>Button and link checks</li> <li>Minor announcement updates</li> <li>Seasonal homepage updates</li> <li>Up to 30 minutes of update time per month</li> </ul> </article> <article class="card care-card featured"> <span class="tag">Most Support</span> <h3>Care Plus Plan</h3> <div class="price">$199 <small>/ month</small></div> <p class="muted">Best for businesses that want monthly content help, updates, and stronger online presence.</p> <ul class="clean"> <li>Everything in the Website Care Plan</li> <li>Up to 1 hour of update time per month</li> <li>Monthly SEO title and description tweaks</li> <li>One blog, news post, or announcement upload per month</li> <li>Product, service, or pricing updates</li> <li>Google Business post copy suggestion</li> <li>Basic monthly website review</li> <li>Priority update queue</li> </ul> </article> </div> <p class="fineprint"> Care plans do not include paid platform fees, domain fees, hosting fees, paid apps, paid plugins, major redesigns, new full website builds, or advanced SEO campaigns. </p> </section> <section id="calculator"> <div class="section-head"> <h2>Quick Pricing Calculator</h2> <p> Leads can pick what they need and see a starting estimate instantly. The same estimate gets sent with their intake form. </p> </div> <div class="calculator-wrap"> <div class="calc-panel"> <div class="field"> <label for="calcPackage">Choose a package</label> <select id="calcPackage"> <option value="Starter Site|499">Starter Site - $499</option> <option value="Business Website|899" selected>Business Website - $899</option> <option value="Shop or Booking Site|1299">Shop or Booking Site - $1,299</option> <option value="Custom Quote|0">Not sure / custom quote</option> </select> </div> <div class="field-grid"> <div class="field"> <label for="extraPages">Extra pages outside package</label> <input id="extraPages" type="number" min="0" value="0" /> </div> <div class="field"> <label for="products">Products to upload</label> <input id="products" type="number" min="0" value="0" /> </div> </div> <div class="field"> <label>Add-ons</label> <div class="checks"> <label class="check"> <input type="checkbox" class="addon" value="Extra Form|75" /> Extra form +$75 </label> <label class="check"> <input type="checkbox" class="addon" value="Blog Setup|150" /> Blog/news setup +$150 </label> <label class="check"> <input type="checkbox" class="addon" value="Copywriting Help|200" /> Copywriting help +$200 </label> <label class="check"> <input type="checkbox" class="addon" value="Booking Setup|150" /> Booking setup +$150 </label> <label class="check"> <input type="checkbox" class="addon" value="Shop Setup|250" /> Shop/product setup +$250 </label> <label class="check"> <input type="checkbox" class="addon" value="Rush Timeline|250" /> Rush timeline +$250 </label> </div> </div> <div class="field"> <label for="carePlan">Optional monthly care plan</label> <select id="carePlan"> <option value="No monthly care plan|0">No monthly care plan</option> <option value="Website Care Plan|99">Website Care Plan - $99/month</option> <option value="Care Plus Plan|199">Care Plus Plan - $199/month</option> </select> </div> <p class="fineprint"> Calculator estimates are starting points. Final quote may change after reviewing goals, content, forms, store needs, and platform setup. </p> </div> <aside class="quote-box"> <div class="small">Estimated website build</div> <div class="quote-main" id="quoteTotal">$899</div> <p id="quoteSummary">Business Website starting estimate.</p> <div class="quote-lines" id="quoteLines"></div> <div class="deposit"> <div> <span>Suggested 50% deposit</span> <strong id="depositDue">$450</strong> </div> <div> <span>Estimated balance</span> <strong id="balanceDue">$449</strong> </div> <div> <span>Optional monthly</span> <strong id="monthlyCare">$0/mo</strong> </div> </div> <p class="fineprint">This quote preview will copy into the intake form below.</p> </aside> </div> </section> <div class="trust-band"> <div class="trust-inner"> <div> <strong>You own it</strong> <span>Your domain, website account, and logins stay yours.</span> </div> <div> <strong>No hidden fees</strong> <span>Monthly care is optional, not required.</span> </div> <div> <strong>Built around you</strong> <span>Every site is organized around your business goals.</span> </div> <div> <strong>Simple process</strong> <span>Fill out the intake, get a quote, send content, launch.</span> </div> </div> </div> <section id="intake"> <div class="section-head"> <h2>Website Build Intake</h2> <p> After they use the calculator, they can submit project details so you can send the real quote. </p> </div> <div class="form-wrap"> <div class="card pad"> <h3>What happens next?</h3> <ul class="clean"> <li>Review business and website goals</li> <li>Confirm package and add-ons</li> <li>Send a custom quote</li> <li>Collect deposit before build starts</li> <li>Build, review, revise, and launch</li> </ul> <p class="fineprint"> Suggested deposit: 50% to start and remaining balance due before launch or final handoff. </p> </div> <div class="form-panel"> <form id="quoteForm" action="https://script.google.com/macros/s/AKfycbz-SaqfQXwcZQNI6h7TEtxrCQ0ynO2-2Gu2PLyRV7BHSi-91qNc0a7ZtiDtAe4C6gT9mA/exec" method="POST" target="hidden_iframe" > <input type="hidden" name="payload" id="payload" /> <input type="hidden" name="calculatorEstimate" id="calculatorEstimate" /> <div class="field-grid"> <div class="field"> <label for="name">Your Name *</label> <input id="name" name="name" required /> </div> <div class="field"> <label for="email">Email *</label> <input id="email" name="email" type="email" required /> </div> </div> <div class="field-grid"> <div class="field"> <label for="phone">Phone</label> <input id="phone" name="phone" /> </div> <div class="field"> <label for="businessName">Business Name *</label> <input id="businessName" name="businessName" required /> </div> </div> <div class="field-grid"> <div class="field"> <label for="businessType">Business Type</label> <input id="businessType" name="businessType" placeholder="Breeder, salon, contractor, shop, etc." /> </div> <div class="field"> <label for="currentWebsite">Current Website, if any</label> <input id="currentWebsite" name="currentWebsite" placeholder="https://" /> </div> </div> <div class="field-grid"> <div class="field"> <label for="domain">Do you have a domain?</label> <select id="domain" name="domain"> <option>Yes</option> <option>No</option> <option>Not sure</option> </select> </div> <div class="field"> <label for="logo">Do you have a logo?</label> <select id="logo" name="logo"> <option>Yes</option> <option>No</option> <option>Need help</option> </select> </div> </div> <div class="field-grid"> <div class="field"> <label for="contentReady">Photos/content ready?</label> <select id="contentReady" name="contentReady"> <option>Yes</option> <option>Some</option> <option>No</option> <option>Need help writing it</option> </select> </div> <div class="field"> <label for="timeline">Ideal Timeline</label> <select id="timeline" name="timeline"> <option>ASAP</option> <option>2-4 weeks</option> <option>1-2 months</option> <option>No rush</option> </select> </div> </div> <div class="field"> <label for="pagesWanted">Pages/sections you want included</label> <textarea id="pagesWanted" name="pagesWanted" placeholder="Home, About, Services, Contact, Shop, FAQ, Gallery, Blog, Puppy Application, Booking, etc." ></textarea> </div> <div class="field"> <label for="goals">What do you want this website to help you do?</label> <textarea id="goals" name="goals" placeholder="Get leads, look more professional, sell products, collect applications, book appointments, explain services, etc." ></textarea> </div> <div class="field"> <label for="inspiration">Websites/styles you like</label> <textarea id="inspiration" name="inspiration" placeholder="Paste links or describe the style you like." ></textarea> </div> <button class="btn brown" type="submit">Submit Website Intake</button> <p class="fineprint"> By submitting, you are requesting a quote. This does not require payment or automatically start a project. </p> <div class="success" id="successMessage"> Your intake was submitted. I’ll review it and follow up with quote details. </div> </form> <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe> </div> </div> </section> </main> <footer> © <span id="year"></span> The Website Nook • Custom website builds for small businesses </footer> <script> const calcPackage = document.getElementById("calcPackage"); const extraPages = document.getElementById("extraPages"); const products = document.getElementById("products"); const addons = Array.from(document.querySelectorAll(".addon")); const carePlan = document.getElementById("carePlan"); const quoteTotal = document.getElementById("quoteTotal"); const quoteSummary = document.getElementById("quoteSummary"); const quoteLines = document.getElementById("quoteLines"); const depositDue = document.getElementById("depositDue"); const balanceDue = document.getElementById("balanceDue"); const monthlyCare = document.getElementById("monthlyCare"); const calculatorEstimate = document.getElementById("calculatorEstimate"); const form = document.getElementById("quoteForm"); const payloadInput = document.getElementById("payload"); const success = document.getElementById("successMessage"); document.getElementById("year").textContent = new Date().getFullYear(); function dollars(num) { return "$" + Math.round(Number(num || 0)).toLocaleString(); } function getSelectionParts(value) { const parts = value.split("|"); return { name: parts[0], amount: Number(parts[1] || 0) }; } function updateQuote() { const pkg = getSelectionParts(calcPackage.value); const pages = Math.max(0, Number(extraPages.value || 0)); const productCount = Math.max(0, Number(products.value || 0)); let total = pkg.amount; let lines = []; if (pkg.amount > 0) { lines.push([pkg.name, pkg.amount]); } if (pages > 0) { const pageTotal = pages * 100; total += pageTotal; lines.push(["Extra pages x " + pages, pageTotal]); } if (productCount > 0) { const productTotal = productCount * 5; total += productTotal; lines.push(["Product uploads x " + productCount, productTotal]); } const selectedAddons = []; addons.forEach(function(box) { if (box.checked) { const item = getSelectionParts(box.value); total += item.amount; selectedAddons.push(item.name); lines.push([item.name, item.amount]); } }); const monthly = getSelectionParts(carePlan.value); quoteTotal.textContent = total > 0 ? dollars(total) : "Custom"; quoteSummary.textContent = total > 0 ? pkg.name + " starting estimate." : "Custom quote needed based on project details."; quoteLines.innerHTML = lines.length ? lines.map(function(line) { return '<div class="quote-line"><span>' + line[0] + '</span><strong>' + dollars(line[1]) + '</strong></div>'; }).join("") : '<div class="quote-line"><span>Custom review</span><strong>Needed</strong></div>'; const deposit = total * 0.5; depositDue.textContent = total > 0 ? dollars(deposit) : "TBD"; balanceDue.textContent = total > 0 ? dollars(total - deposit) : "TBD"; monthlyCare.textContent = monthly.amount > 0 ? dollars(monthly.amount) + "/mo" : "$0/mo"; const estimateObject = { package: pkg.name, basePrice: pkg.amount, extraPages: pages, productUploads: productCount, addons: selectedAddons, carePlan: monthly.name, monthlyCare: monthly.amount, estimatedBuildTotal: total > 0 ? dollars(total) : "Custom", suggestedDeposit: total > 0 ? dollars(deposit) : "TBD", estimatedBalance: total > 0 ? dollars(total - deposit) : "TBD" }; calculatorEstimate.value = JSON.stringify(estimateObject, null, 2); } [calcPackage, extraPages, products, carePlan].forEach(function(el) { el.addEventListener("input", updateQuote); }); addons.forEach(function(box) { box.addEventListener("change", updateQuote); }); updateQuote(); form.addEventListener("submit", function(e) { updateQuote(); const data = {}; const formData = new FormData(form); for (const pair of formData.entries()) { const key = pair[0]; const value = pair[1]; if (key === "payload") { continue; } data[key] = value; } data.submittedAt = new Date().toLocaleString(); payloadInput.value = JSON.stringify(data, null, 2); setTimeout(function() { success.style.display = "block"; form.reset(); updateQuote(); }, 500); }); </script> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>The Website Nook | Website Pricing + Intake</title>
+  <meta name="description" content="Custom website builds for small businesses, side hustles, service providers, shops, breeders, creators, and growing brands." />
+
+  <style>
+    :root {
+      --ink: #221813;
+      --text: #3f342c;
+      --muted: #716459;
+      --cream: #fbf7ef;
+      --paper: #ffffff;
+      --sand: #efe3d2;
+      --tan: #c7a980;
+      --brown: #7d5837;
+      --espresso: #2b2119;
+      --sage: #65785f;
+      --rose: #b9827b;
+      --shadow: 0 24px 65px rgba(43, 33, 25, .14);
+      --soft: 0 12px 34px rgba(43, 33, 25, .08);
+      --radius: 28px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 6%, rgba(199, 169, 128, .22), transparent 26%),
+        radial-gradient(circle at 88% 10%, rgba(185, 130, 123, .13), transparent 30%),
+        linear-gradient(180deg, var(--cream), #fff 42%, #f8f0e5 100%);
+      line-height: 1.55;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .announce {
+      background: var(--espresso);
+      color: white;
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(251, 247, 239, .92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(125, 88, 55, .13);
+    }
+
+    .nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand strong {
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      font-size: 29px;
+      letter-spacing: -.03em;
+      line-height: 1;
+    }
+
+    .brand span {
+      display: block;
+      margin-top: 4px;
+      color: var(--brown);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+      font-size: 14px;
+      font-weight: 850;
+    }
+
+    .navlinks a {
+      text-decoration: none;
+      color: #3c3027;
+      opacity: .9;
+    }
+
+    .navlinks a:hover {
+      opacity: 1;
+      color: var(--brown);
+    }
+
+    .btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 13px 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--espresso);
+      color: #fff !important;
+      text-decoration: none;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: 0 12px 28px rgba(43, 33, 25, .23);
+      transition: .18s ease;
+      white-space: nowrap;
+      font-family: inherit;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 38px rgba(43, 33, 25, .26);
+    }
+
+    .btn.light {
+      background: #fff;
+      color: var(--espresso) !important;
+      border: 1px solid rgba(125, 88, 55, .20);
+      box-shadow: none;
+    }
+
+    .btn.brown {
+      background: var(--brown);
+    }
+
+    .hero {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 74px 20px 48px;
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(199, 169, 128, .20);
+      border: 1px solid rgba(125, 88, 55, .12);
+      color: #6c4f31;
+      padding: 8px 13px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    h1,
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      letter-spacing: -.045em;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(44px, 6vw, 78px);
+      line-height: .96;
+      max-width: 680px;
+    }
+
+    .hero p {
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 19px;
+      max-width: 640px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 28px;
+    }
+
+    .hero-note {
+      margin-top: 16px;
+      color: #76695f;
+      font-size: 14px;
+    }
+
+    .mock-stack {
+      display: grid;
+      gap: 16px;
+      position: relative;
+    }
+
+    .browser {
+      background: white;
+      border: 1px solid rgba(125, 88, 55, .16);
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .browser.top {
+      transform: rotate(1deg);
+    }
+
+    .browser.bottom {
+      transform: rotate(-1.2deg);
+      margin-left: 44px;
+    }
+
+    .dots {
+      display: flex;
+      gap: 7px;
+      padding: 13px 15px;
+      background: #fff9f0;
+      border-bottom: 1px solid rgba(125, 88, 55, .12);
+    }
+
+    .dots span {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      display: block;
+      background: #d8c8b4;
+    }
+
+    .site-link {
+      display: block;
+      position: relative;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .site-link::after {
+      content: "Click to view live site";
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      background: rgba(43, 33, 25, .88);
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .02em;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: .18s ease;
+      pointer-events: none;
+      z-index: 4;
+    }
+
+    .site-link:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .site-link img {
+      transition: .22s ease;
+    }
+
+    .site-link:hover img {
+      transform: scale(1.025);
+    }
+
+    .browser img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 16 / 8.4;
+      object-fit: cover;
+      object-position: top center;
+      background: #f0e6d8;
+    }
+
+    .proof-pill {
+      width: max-content;
+      max-width: 100%;
+      margin: -10px auto 0;
+      background: white;
+      border: 1px solid rgba(125, 88, 55, .18);
+      box-shadow: var(--soft);
+      border-radius: 999px;
+      padding: 13px 18px;
+      font-weight: 900;
+      color: var(--ink);
+      position: relative;
+      z-index: 2;
+    }
+
+    section {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 58px 20px;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 26px;
+      margin-bottom: 26px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(34px, 4vw, 50px);
+      line-height: 1;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 560px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .grid.three {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid.two {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+      background: rgba(255, 255, 255, .9);
+      border: 1px solid rgba(125, 88, 55, .15);
+      border-radius: var(--radius);
+      box-shadow: var(--soft);
+      overflow: hidden;
+    }
+
+    .pad {
+      padding: 26px;
+    }
+
+    .portfolio-img {
+      height: 210px;
+      overflow: hidden;
+      background: #efe7dc;
+    }
+
+    .portfolio-img img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    .portfolio-body {
+      padding: 22px;
+    }
+
+    .tag {
+      display: inline-flex;
+      background: rgba(101, 120, 95, .13);
+      color: #506448;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 11px;
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: var(--ink);
+      margin: 0 0 8px;
+      font-size: 22px;
+      letter-spacing: -.025em;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .price-card {
+      padding: 27px;
+      position: relative;
+      min-height: 100%;
+    }
+
+    .price-card.featured {
+      background: linear-gradient(180deg, #fff, #fff7ea);
+      border: 2px solid rgba(125, 88, 55, .28);
+      transform: translateY(-8px);
+    }
+
+    .badge {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      border-radius: 999px;
+      background: var(--espresso);
+      color: white;
+      padding: 6px 10px;
+      font-size: 11px;
+      font-weight: 950;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    .price {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      font-size: 44px;
+      line-height: 1;
+      margin: 16px 0 4px;
+    }
+
+    .price small {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    ul.clean {
+      list-style: none;
+      padding: 0;
+      margin: 18px 0 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    ul.clean li {
+      position: relative;
+      padding-left: 27px;
+      color: #3d342d;
+    }
+
+    ul.clean li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--sage);
+      font-weight: 950;
+    }
+
+    .care-card {
+      padding: 27px;
+      min-height: 100%;
+    }
+
+    .care-card.featured {
+      border: 2px solid rgba(125, 88, 55, .28);
+      background: linear-gradient(180deg, #fff, #fff8ec);
+    }
+
+    .calculator-wrap {
+      display: grid;
+      grid-template-columns: 1.04fr .96fr;
+      gap: 22px;
+      align-items: start;
+    }
+
+    .calc-panel,
+    .form-panel {
+      background: white;
+      border: 1px solid rgba(125, 88, 55, .16);
+      border-radius: 32px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    label {
+      display: block;
+      font-weight: 950;
+      color: #2d241d;
+      font-size: 13px;
+      margin: 0 0 8px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid rgba(95, 107, 122, .25);
+      border-radius: 16px;
+      padding: 13px 14px;
+      background: white;
+      color: #2d241d;
+      font: inherit;
+      outline: none;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--brown);
+      box-shadow: 0 0 0 4px rgba(199, 169, 128, .23);
+    }
+
+    textarea {
+      min-height: 104px;
+      resize: vertical;
+    }
+
+    .field {
+      margin-bottom: 16px;
+    }
+
+    .field-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .checks {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .check {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 12px;
+      border: 1px solid rgba(125, 88, 55, .14);
+      border-radius: 16px;
+      background: #fbf7ef;
+      font-weight: 800;
+      font-size: 14px;
+      color: #3a2d24;
+    }
+
+    .check input {
+      width: auto;
+      margin-top: 3px;
+    }
+
+    .quote-box {
+      position: sticky;
+      top: 104px;
+      background: var(--espresso);
+      color: white;
+      border-radius: 32px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .quote-box .small {
+      color: #d9cbb9;
+      font-size: 12px;
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: .13em;
+    }
+
+    .quote-main {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 62px;
+      line-height: 1;
+      margin: 8px 0 10px;
+    }
+
+    .quote-box p {
+      color: #eee5d9;
+      margin: 0;
+    }
+
+    .quote-lines {
+      margin: 20px 0;
+      display: grid;
+      gap: 9px;
+    }
+
+    .quote-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+      color: #f8f1e8;
+    }
+
+    .quote-line span:first-child {
+      color: #d9cbb9;
+    }
+
+    .deposit {
+      background: rgba(255, 255, 255, .10);
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 20px;
+      padding: 16px;
+      display: grid;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .deposit div {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .fineprint {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 11px;
+    }
+
+    .quote-box .fineprint {
+      color: #d9cbb9;
+    }
+
+    .form-wrap {
+      display: grid;
+      grid-template-columns: .82fr 1.18fr;
+      gap: 22px;
+      align-items: start;
+    }
+
+    .trust-band {
+      margin-top: 18px;
+      background: var(--espresso);
+      color: white;
+    }
+
+    .trust-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 34px 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .trust-inner strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 17px;
+    }
+
+    .trust-inner span {
+      color: #d9cbb9;
+      font-size: 14px;
+    }
+
+    .success {
+      display: none;
+      margin-top: 14px;
+      border-radius: 18px;
+      padding: 14px;
+      background: rgba(101, 120, 95, .13);
+      color: #43563b;
+      border: 1px solid rgba(101, 120, 95, .25);
+      font-weight: 900;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 930px) {
+      .hero,
+      .calculator-wrap,
+      .form-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .grid.three,
+      .grid.two,
+      .trust-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .section-head {
+        display: block;
+      }
+
+      .section-head p {
+        margin-top: 12px;
+      }
+
+      .price-card.featured {
+        transform: none;
+      }
+
+      .browser.bottom {
+        margin-left: 0;
+      }
+
+      .navlinks a:not(.btn) {
+        display: none;
+      }
+
+      .field-grid,
+      .checks {
+        grid-template-columns: 1fr;
+      }
+
+      .quote-box {
+        position: static;
+      }
+
+      .quote-main {
+        font-size: 52px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="announce">Custom websites • pricing calculator • portfolio • quote intake</div>
+
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <strong>The Website Nook</strong>
+        <span>Custom website builds</span>
+      </div>
+
+      <nav class="navlinks">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#packages">Pricing</a>
+        <a href="#care">Care Plans</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#intake" class="btn">Start Intake</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Set your website estimate in minutes</div>
+        <h1>Websites that make your business look real, ready, and trustworthy.</h1>
+        <p>
+          Custom website builds for small businesses, side hustles, shops, breeders, service providers, creators,
+          and local brands.
+        </p>
+
+        <div class="actions">
+          <a class="btn brown" href="#calculator">Get Estimate</a>
+          <a class="btn light" href="#portfolio">View Portfolio</a>
+        </div>
+
+        <div class="hero-note">
+          You own your domain, website account, and business assets. No hidden monthly fees unless you choose a care plan.
+        </div>
+      </div>
+
+      <div class="mock-stack">
+        <div class="browser top">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <a class="site-link" href="https://thedoodlenook.com/" target="_blank" rel="noopener">
+            <img
+              src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fthedoodlenook.com%2F?w=1200"
+              alt="The Doodle Nook website screenshot"
+            />
+          </a>
+        </div>
+
+        <div class="browser bottom">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <a class="site-link" href="https://willowferncofreezedried.com/" target="_blank" rel="noopener">
+            <img
+              src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwillowferncofreezedried.com%2F?w=1200"
+              alt="Willow and Fern Co website screenshot"
+            />
+          </a>
+        </div>
+
+        <div class="proof-pill">Click the website previews to view the live sites</div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="section-head">
+        <h2>Portfolio Snapshot</h2>
+        <p>Real examples from a breeder website, a product/shop website, and a local SEO content layout.</p>
+      </div>
+
+      <div class="grid three">
+        <article class="card">
+          <div class="portfolio-img">
+            <a class="site-link" href="https://thedoodlenook.com/" target="_blank" rel="noopener">
+              <img
+                src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fthedoodlenook.com%2F?w=900"
+                alt="The Doodle Nook homepage"
+              />
+            </a>
+          </div>
+          <div class="portfolio-body">
+            <span class="tag">Breeder Website</span>
+            <h3>The Doodle Nook</h3>
+            <p class="muted">
+              A warm, trust-building website designed to showcase puppies, answer buyer questions,
+              and guide visitors toward an application.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="portfolio-img">
+            <a class="site-link" href="https://willowferncofreezedried.com/" target="_blank" rel="noopener">
+              <img
+                src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwillowferncofreezedried.com%2F?w=900"
+                alt="Willow and Fern Co homepage"
+              />
+            </a>
+          </div>
+          <div class="portfolio-body">
+            <span class="tag">Product Website</span>
+            <h3>Willow & Fern Co</h3>
+            <p class="muted">
+              A bold shop-style site with product navigation, bright visuals, and clear shopping calls-to-action.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="portfolio-img">
+            <a class="site-link" href="https://willowferncofreezedried.com/blogs/news" target="_blank" rel="noopener">
+              <img
+                src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwillowferncofreezedried.com%2Fblogs%2Fnews?w=900"
+                alt="Willow and Fern Co blog layout"
+              />
+            </a>
+          </div>
+          <div class="portfolio-body">
+            <span class="tag">SEO Content</span>
+            <h3>Local Blog Layout</h3>
+            <p class="muted">
+              A content section built around local search terms so the business has more ways to be discovered online.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="packages">
+      <div class="section-head">
+        <h2>Website Packages</h2>
+        <p>Clear starting prices. The calculator below lets leads estimate their project before they submit the intake form.</p>
+      </div>
+
+      <div class="grid three">
+        <article class="card price-card">
+          <h3>Starter Site</h3>
+          <p class="muted">Best for a new business that needs a simple online home.</p>
+          <div class="price">$499 <small>starting at</small></div>
+          <ul class="clean">
+            <li>1 to 3 pages</li>
+            <li>Mobile-friendly layout</li>
+            <li>Home, about, contact sections</li>
+            <li>Contact form</li>
+            <li>Social media links</li>
+            <li>Basic SEO setup</li>
+          </ul>
+        </article>
+
+        <article class="card price-card featured">
+          <span class="badge">Most Popular</span>
+          <h3>Business Website</h3>
+          <p class="muted">Best for businesses that need services, gallery, and stronger credibility.</p>
+          <div class="price">$899 <small>starting at</small></div>
+          <ul class="clean">
+            <li>4 to 6 pages</li>
+            <li>Home, about, services, gallery, contact</li>
+            <li>Inquiry form</li>
+            <li>Brand colors and layout styling</li>
+            <li>Google Business link setup</li>
+            <li>Basic SEO setup</li>
+          </ul>
+        </article>
+
+        <article class="card price-card">
+          <h3>Shop or Booking Site</h3>
+          <p class="muted">Best for product sellers, booking-based businesses, and detailed inquiries.</p>
+          <div class="price">$1,299 <small>starting at</small></div>
+          <ul class="clean">
+            <li>5 to 8 pages</li>
+            <li>Shop or booking integration</li>
+            <li>Product/service setup</li>
+            <li>Policy page</li>
+            <li>Gallery or portfolio</li>
+            <li>Launch support</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="care">
+      <div class="section-head">
+        <h2>Monthly Care Plans</h2>
+        <p>Optional monthly support for businesses that want help keeping their website fresh after launch.</p>
+      </div>
+
+      <div class="grid two">
+        <article class="card care-card">
+          <span class="tag">Optional Add-On</span>
+          <h3>Website Care Plan</h3>
+          <div class="price">$99 <small>/ month</small></div>
+          <p class="muted">Best for basic upkeep and small monthly changes.</p>
+
+          <ul class="clean">
+            <li>Small text updates</li>
+            <li>Photo swaps or gallery updates</li>
+            <li>Button and link checks</li>
+            <li>Minor announcement updates</li>
+            <li>Seasonal homepage updates</li>
+            <li>Up to 30 minutes of update time per month</li>
+          </ul>
+        </article>
+
+        <article class="card care-card featured">
+          <span class="tag">Most Support</span>
+          <h3>Care Plus Plan</h3>
+          <div class="price">$199 <small>/ month</small></div>
+          <p class="muted">Best for businesses that want monthly content help, updates, and stronger online presence.</p>
+
+          <ul class="clean">
+            <li>Everything in the Website Care Plan</li>
+            <li>Up to 1 hour of update time per month</li>
+            <li>Monthly SEO title and description tweaks</li>
+            <li>One blog, news post, or announcement upload per month</li>
+            <li>Product, service, or pricing updates</li>
+            <li>Google Business post copy suggestion</li>
+            <li>Basic monthly website review</li>
+            <li>Priority update queue</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="fineprint">
+        Care plans do not include paid platform fees, domain fees, hosting fees, paid apps, paid plugins, major redesigns, new full website builds, or advanced SEO campaigns.
+      </p>
+    </section>
+
+    <section id="calculator">
+      <div class="section-head">
+        <h2>Quick Pricing Calculator</h2>
+        <p>
+          Leads can pick what they need and see a starting estimate instantly.
+          The same estimate gets sent with their intake form.
+        </p>
+      </div>
+
+      <div class="calculator-wrap">
+        <div class="calc-panel">
+          <div class="field">
+            <label for="calcPackage">Choose a package</label>
+            <select id="calcPackage">
+              <option value="Starter Site|499">Starter Site - $499</option>
+              <option value="Business Website|899" selected>Business Website - $899</option>
+              <option value="Shop or Booking Site|1299">Shop or Booking Site - $1,299</option>
+              <option value="Custom Quote|0">Not sure / custom quote</option>
+            </select>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="extraPages">Extra pages outside package</label>
+              <input id="extraPages" type="number" min="0" value="0" />
+            </div>
+
+            <div class="field">
+              <label for="products">Products to upload</label>
+              <input id="products" type="number" min="0" value="0" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Add-ons</label>
+
+            <div class="checks">
+              <label class="check">
+                <input type="checkbox" class="addon" value="Extra Form|75" />
+                Extra form +$75
+              </label>
+
+              <label class="check">
+                <input type="checkbox" class="addon" value="Blog Setup|150" />
+                Blog/news setup +$150
+              </label>
+
+              <label class="check">
+                <input type="checkbox" class="addon" value="Copywriting Help|200" />
+                Copywriting help +$200
+              </label>
+
+              <label class="check">
+                <input type="checkbox" class="addon" value="Booking Setup|150" />
+                Booking setup +$150
+              </label>
+
+              <label class="check">
+                <input type="checkbox" class="addon" value="Shop Setup|250" />
+                Shop/product setup +$250
+              </label>
+
+              <label class="check">
+                <input type="checkbox" class="addon" value="Rush Timeline|250" />
+                Rush timeline +$250
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="carePlan">Optional monthly care plan</label>
+            <select id="carePlan">
+              <option value="No monthly care plan|0">No monthly care plan</option>
+              <option value="Website Care Plan|99">Website Care Plan - $99/month</option>
+              <option value="Care Plus Plan|199">Care Plus Plan - $199/month</option>
+            </select>
+          </div>
+
+          <p class="fineprint">
+            Calculator estimates are starting points. Final quote may change after reviewing goals,
+            content, forms, store needs, and platform setup.
+          </p>
+        </div>
+
+        <aside class="quote-box">
+          <div class="small">Estimated website build</div>
+          <div class="quote-main" id="quoteTotal">$899</div>
+          <p id="quoteSummary">Business Website starting estimate.</p>
+
+          <div class="quote-lines" id="quoteLines"></div>
+
+          <div class="deposit">
+            <div>
+              <span>Suggested 50% deposit</span>
+              <strong id="depositDue">$450</strong>
+            </div>
+
+            <div>
+              <span>Estimated balance</span>
+              <strong id="balanceDue">$449</strong>
+            </div>
+
+            <div>
+              <span>Optional monthly</span>
+              <strong id="monthlyCare">$0/mo</strong>
+            </div>
+          </div>
+
+          <p class="fineprint">This quote preview will copy into the intake form below.</p>
+        </aside>
+      </div>
+    </section>
+
+    <div class="trust-band">
+      <div class="trust-inner">
+        <div>
+          <strong>You own it</strong>
+          <span>Your domain, website account, and logins stay yours.</span>
+        </div>
+
+        <div>
+          <strong>No hidden fees</strong>
+          <span>Monthly care is optional, not required.</span>
+        </div>
+
+        <div>
+          <strong>Built around you</strong>
+          <span>Every site is organized around your business goals.</span>
+        </div>
+
+        <div>
+          <strong>Simple process</strong>
+          <span>Fill out the intake, get a quote, send content, launch.</span>
+        </div>
+      </div>
+    </div>
+
+    <section id="intake">
+      <div class="section-head">
+        <h2>Website Build Intake</h2>
+        <p>
+          After they use the calculator, they can submit project details so you can send the real quote.
+        </p>
+      </div>
+
+      <div class="form-wrap">
+        <div class="card pad">
+          <h3>What happens next?</h3>
+
+          <ul class="clean">
+            <li>Review business and website goals</li>
+            <li>Confirm package and add-ons</li>
+            <li>Send a custom quote</li>
+            <li>Collect deposit before build starts</li>
+            <li>Build, review, revise, and launch</li>
+          </ul>
+
+          <p class="fineprint">
+            Suggested deposit: 50% to start and remaining balance due before launch or final handoff.
+          </p>
+        </div>
+
+        <div class="form-panel">
+          <form
+            id="quoteForm"
+            action="https://script.google.com/macros/s/AKfycbz-SaqfQXwcZQNI6h7TEtxrCQ0ynO2-2Gu2PLyRV7BHSi-91qNc0a7ZtiDtAe4C6gT9mA/exec"
+            method="POST"
+            target="hidden_iframe"
+          >
+            <input type="hidden" name="payload" id="payload" />
+            <input type="hidden" name="calculatorEstimate" id="calculatorEstimate" />
+
+            <div class="field-grid">
+              <div class="field">
+                <label for="name">Your Name *</label>
+                <input id="name" name="name" required />
+              </div>
+
+              <div class="field">
+                <label for="email">Email *</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+            </div>
+
+            <div class="field-grid">
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" />
+              </div>
+
+              <div class="field">
+                <label for="businessName">Business Name *</label>
+                <input id="businessName" name="businessName" required />
+              </div>
+            </div>
+
+            <div class="field-grid">
+              <div class="field">
+                <label for="businessType">Business Type</label>
+                <input id="businessType" name="businessType" placeholder="Breeder, salon, contractor, shop, etc." />
+              </div>
+
+              <div class="field">
+                <label for="currentWebsite">Current Website, if any</label>
+                <input id="currentWebsite" name="currentWebsite" placeholder="https://" />
+              </div>
+            </div>
+
+            <div class="field-grid">
+              <div class="field">
+                <label for="domain">Do you have a domain?</label>
+                <select id="domain" name="domain">
+                  <option>Yes</option>
+                  <option>No</option>
+                  <option>Not sure</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="logo">Do you have a logo?</label>
+                <select id="logo" name="logo">
+                  <option>Yes</option>
+                  <option>No</option>
+                  <option>Need help</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-grid">
+              <div class="field">
+                <label for="contentReady">Photos/content ready?</label>
+                <select id="contentReady" name="contentReady">
+                  <option>Yes</option>
+                  <option>Some</option>
+                  <option>No</option>
+                  <option>Need help writing it</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="timeline">Ideal Timeline</label>
+                <select id="timeline" name="timeline">
+                  <option>ASAP</option>
+                  <option>2-4 weeks</option>
+                  <option>1-2 months</option>
+                  <option>No rush</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="pagesWanted">Pages/sections you want included</label>
+              <textarea
+                id="pagesWanted"
+                name="pagesWanted"
+                placeholder="Home, About, Services, Contact, Shop, FAQ, Gallery, Blog, Puppy Application, Booking, etc."
+              ></textarea>
+            </div>
+
+            <div class="field">
+              <label for="goals">What do you want this website to help you do?</label>
+              <textarea
+                id="goals"
+                name="goals"
+                placeholder="Get leads, look more professional, sell products, collect applications, book appointments, explain services, etc."
+              ></textarea>
+            </div>
+
+            <div class="field">
+              <label for="inspiration">Websites/styles you like</label>
+              <textarea
+                id="inspiration"
+                name="inspiration"
+                placeholder="Paste links or describe the style you like."
+              ></textarea>
+            </div>
+
+            <button class="btn brown" type="submit">Submit Website Intake</button>
+
+            <p class="fineprint">
+              By submitting, you are requesting a quote. This does not require payment or automatically start a project.
+            </p>
+
+            <div class="success" id="successMessage">
+              Your intake was submitted. I’ll review it and follow up with quote details.
+            </div>
+          </form>
+
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> The Website Nook • Custom website builds for small businesses
+  </footer>
+
+  <script>
+    const calcPackage = document.getElementById("calcPackage");
+    const extraPages = document.getElementById("extraPages");
+    const products = document.getElementById("products");
+    const addons = Array.from(document.querySelectorAll(".addon"));
+    const carePlan = document.getElementById("carePlan");
+
+    const quoteTotal = document.getElementById("quoteTotal");
+    const quoteSummary = document.getElementById("quoteSummary");
+    const quoteLines = document.getElementById("quoteLines");
+    const depositDue = document.getElementById("depositDue");
+    const balanceDue = document.getElementById("balanceDue");
+    const monthlyCare = document.getElementById("monthlyCare");
+    const calculatorEstimate = document.getElementById("calculatorEstimate");
+
+    const form = document.getElementById("quoteForm");
+    const payloadInput = document.getElementById("payload");
+    const success = document.getElementById("successMessage");
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function dollars(num) {
+      return "$" + Math.round(Number(num || 0)).toLocaleString();
+    }
+
+    function getSelectionParts(value) {
+      const parts = value.split("|");
+      return {
+        name: parts[0],
+        amount: Number(parts[1] || 0)
+      };
+    }
+
+    function updateQuote() {
+      const pkg = getSelectionParts(calcPackage.value);
+      const pages = Math.max(0, Number(extraPages.value || 0));
+      const productCount = Math.max(0, Number(products.value || 0));
+
+      let total = pkg.amount;
+      let lines = [];
+
+      if (pkg.amount > 0) {
+        lines.push([pkg.name, pkg.amount]);
+      }
+
+      if (pages > 0) {
+        const pageTotal = pages * 100;
+        total += pageTotal;
+        lines.push(["Extra pages x " + pages, pageTotal]);
+      }
+
+      if (productCount > 0) {
+        const productTotal = productCount * 5;
+        total += productTotal;
+        lines.push(["Product uploads x " + productCount, productTotal]);
+      }
+
+      const selectedAddons = [];
+
+      addons.forEach(function(box) {
+        if (box.checked) {
+          const item = getSelectionParts(box.value);
+          total += item.amount;
+          selectedAddons.push(item.name);
+          lines.push([item.name, item.amount]);
+        }
+      });
+
+      const monthly = getSelectionParts(carePlan.value);
+
+      quoteTotal.textContent = total > 0 ? dollars(total) : "Custom";
+      quoteSummary.textContent = total > 0
+        ? pkg.name + " starting estimate."
+        : "Custom quote needed based on project details.";
+
+      quoteLines.innerHTML = lines.length
+        ? lines.map(function(line) {
+            return '<div class="quote-line"><span>' + line[0] + '</span><strong>' + dollars(line[1]) + '</strong></div>';
+          }).join("")
+        : '<div class="quote-line"><span>Custom review</span><strong>Needed</strong></div>';
+
+      const deposit = total * 0.5;
+
+      depositDue.textContent = total > 0 ? dollars(deposit) : "TBD";
+      balanceDue.textContent = total > 0 ? dollars(total - deposit) : "TBD";
+      monthlyCare.textContent = monthly.amount > 0 ? dollars(monthly.amount) + "/mo" : "$0/mo";
+
+      const estimateObject = {
+        package: pkg.name,
+        basePrice: pkg.amount,
+        extraPages: pages,
+        productUploads: productCount,
+        addons: selectedAddons,
+        carePlan: monthly.name,
+        monthlyCare: monthly.amount,
+        estimatedBuildTotal: total > 0 ? dollars(total) : "Custom",
+        suggestedDeposit: total > 0 ? dollars(deposit) : "TBD",
+        estimatedBalance: total > 0 ? dollars(total - deposit) : "TBD"
+      };
+
+      calculatorEstimate.value = JSON.stringify(estimateObject, null, 2);
+    }
+
+    [calcPackage, extraPages, products, carePlan].forEach(function(el) {
+      el.addEventListener("input", updateQuote);
+    });
+
+    addons.forEach(function(box) {
+      box.addEventListener("change", updateQuote);
+    });
+
+    updateQuote();
+
+    form.addEventListener("submit", function(e) {
+      updateQuote();
+
+      const data = {};
+      const formData = new FormData(form);
+
+      for (const pair of formData.entries()) {
+        const key = pair[0];
+        const value = pair[1];
+
+        if (key === "payload") {
+          continue;
+        }
+
+        data[key] = value;
+      }
+
+      data.submittedAt = new Date().toLocaleString();
+
+      payloadInput.value = JSON.stringify(data, null, 2);
+
+      setTimeout(function() {
+        success.style.display = "block";
+        form.reset();
+        updateQuote();
+      }, 500);
+    });
+  </script>
+</body>
+</html>
