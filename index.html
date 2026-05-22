@@ -14,13 +14,11 @@
       --navy-800: #123055;
       --navy-700: #1b4270;
       --gold-500: #c9a45c;
-      --gold-400: #dfc07c;
       --gold-300: #efd8a6;
-      --cream: #f7f8fb;
       --white: #ffffff;
       --ink: #122033;
       --muted: #617089;
-      --line: rgba(9, 27, 51, 0.10);
+      --line: rgba(9, 27, 51, 0.12);
       --shadow: 0 24px 70px rgba(7, 20, 38, 0.12);
       --soft-shadow: 0 12px 36px rgba(7, 20, 38, 0.08);
       --radius-xl: 28px;
@@ -190,7 +188,6 @@
     .pill {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
       border-radius: 999px;
       padding: 8px 14px;
       border: 1px solid rgba(201,164,92,.38);
@@ -395,30 +392,6 @@
     .portfolio-image img {
       min-height: 220px;
       height: 220px;
-    }
-
-    .doodle-placeholder {
-      height: 220px;
-      padding: 26px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background:
-        radial-gradient(circle at 80% 20%, rgba(201,164,92,.24), transparent 25%),
-        linear-gradient(135deg, var(--navy-950), var(--navy-800));
-      color: white;
-    }
-
-    .doodle-placeholder strong {
-      font-size: 26px;
-      line-height: 1.05;
-      letter-spacing: -.04em;
-    }
-
-    .doodle-placeholder span {
-      margin-top: 10px;
-      color: #d8e0ed;
-      font-size: 14px;
     }
 
     .tag {
@@ -834,15 +807,15 @@
       <div class="preview-stack">
         <div class="browser">
           <div class="browser-bar"><span></span><span></span><span></span></div>
-          <a class="site-shot" href="https://willowferncofreezedried.com/" target="_blank" rel="noopener">
-            <img src="assets/IMG_8656.jpeg" alt="Willow and Fern Co website screenshot" />
+          <a class="site-shot" href="https://thedoodlenook.com/" target="_blank" rel="noopener">
+            <img src="assets/IMG_8665.jpeg" alt="The Doodle Nook website screenshot" />
           </a>
         </div>
 
         <div class="browser">
           <div class="browser-bar"><span></span><span></span><span></span></div>
-          <a class="site-shot" href="https://willowferncofreezedried.com/blogs/news" target="_blank" rel="noopener">
-            <img src="assets/IMG_8658.jpeg" alt="Willow and Fern Co news screenshot" />
+          <a class="site-shot" href="https://willowferncofreezedried.com/" target="_blank" rel="noopener">
+            <img src="assets/IMG_8656.jpeg" alt="Willow and Fern Co website screenshot" />
           </a>
         </div>
 
@@ -855,18 +828,17 @@
         <h2>Portfolio Snapshot</h2>
         <p>
           Real examples showing digital storefront structure, product-based layout,
-          local SEO content, and clean website flow.
+          local SEO content, breeder website flow, and clean website navigation.
         </p>
       </div>
 
       <div class="grid three">
         <article class="card">
-          <a class="site-shot" href="https://thedoodlenook.com/" target="_blank" rel="noopener">
-            <div class="doodle-placeholder">
-              <strong>The Doodle Nook</strong>
-              <span>Live breeder website example. Click to view the full site.</span>
-            </div>
-          </a>
+          <div class="portfolio-image">
+            <a class="site-shot" href="https://thedoodlenook.com/" target="_blank" rel="noopener">
+              <img src="assets/IMG_8665.jpeg" alt="The Doodle Nook homepage screenshot" />
+            </a>
+          </div>
           <div class="card-body">
             <span class="tag">Breeder Website</span>
             <h3>The Doodle Nook</h3>
@@ -1230,10 +1202,6 @@
             </div>
 
             <button class="btn btn-gold" type="submit">Submit Website Intake</button>
-
-            <p class="fineprint">
-              By submitting, they are requesting a quote. This does not require payment or automatically start a project.
-            </p>
 
             <div class="success" id="successMessage">
               Your intake was submitted. I’ll review it and follow up with quote details.
